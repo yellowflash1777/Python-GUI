@@ -30,15 +30,17 @@ my_text.pack(anchor="ne")#by default if will display on center top
 def button_fun():
     #print("hey")
     my_button_label=tk.Label(win,text="hey")
-    my_button_label.pack(anchor="ne")
+    my_button_label.pack(anchor="nw")
 
 my_button=tk.Button(win,text="Print Hey",command=button_fun)
 my_button.pack(anchor="ne")
 
 #creating a closing button
-def button_fun2():
-    s
-my_button2=tk.Button(win,text="close",command=)
+def button_destroy():
+    win.destroy()
+my_button2=tk.Button(win,text="Destroy",command=button_destroy)
+my_button2.pack(side="bottom")
+
 
 
 #initilazing loop
