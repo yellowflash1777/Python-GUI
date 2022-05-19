@@ -38,9 +38,7 @@ my_button.pack(anchor="ne")
 #creating a closing button
 def button_destroy():
     win.destroy()
-
-#styling button    
-my_button2=tk.Button(win,text="Destroy",font=('ariel',25),command=button_destroy,fg="white",bg="black",activebackground="white",activeforeground="black",padx=23,pady=23)
+my_button2=tk.Button(win,text="Destroy",command=button_destroy,fg="white",bg="black",activebackground="white",activeforeground="black")
 my_button2.pack(side="bottom")
 
 
