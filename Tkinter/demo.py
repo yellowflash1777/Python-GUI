@@ -35,9 +35,22 @@ def button_fun():
 my_button=tk.Button(win,text="Print Hey",command=button_fun)
 my_button.pack(anchor="ne")
 
+#creating entry
+my_entry=tk.Entry(win,font=('ariel',20))
+my_entry.pack()
+
+def entry_fun():
+    my_info=my_entry.get()
+    my_text4=tk.Label(win,text=f'The enterd text is : {my_info}')
+    my_text4.pack()
+
+my_button3=tk.Button(win,text="Submit",command=entry_fun)
+my_button3.pack()
+
 #creating a closing button
 def button_destroy():
     win.destroy()
+
 
 #styling button    
 my_button2=tk.Button(win,text="Destroy",font=('ariel',25),command=button_destroy,fg="white",bg="black",activebackground="white",activeforeground="black",padx=23,pady=23)
